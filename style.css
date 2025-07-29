@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	scrollbar-color: var(--foreground-color) var(--background-color);
+	scrollbar-width: thin;
+}
+
+:root {
+	--foreground-color: white;
+	--background-color: #1f1f1f;;
+	--white-shade-degree-0: #ffffff1f;
+	--white-shade-degree-1: #ffffff3f;
+	--white-shade-degree-2: #ffffff7f;
+	--white-shade-degree-3: #ffffffbf;
+	--file-list-height: 1rem;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+	margin: 2rem;
+	font-family: 'Nimbus Sans', sans-serif;
+}
+
+a {
+	color: var(--foreground-color);
+	background-color: var(--background-color);
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+a:hover {
+	color: var(--background-color);
+	background-color: var(--foreground-color);
+}
+table {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-top: 4px var(--foreground-color) solid;
+	border-bottom: 4px var(--foreground-color) solid;
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+tr > th {
+	text-align: left;
+}
+thead {
+	border-top: 2px var(--foreground-color) solid;
+	border-bottom: 2px var(--foreground-color) solid;
+}
+
+code { font-size: 1rem; }
+pre { font-size: 1rem; }
+
+
+header {
+	padding-bottom: 1rem;
+}
+
+footer {
+	padding-top: 1rem;
+}
+
+hr {
+	height: 4px;
+	border: none;
+	background-color: var(--foreground-color);
+}
+.header-name {
+	font-size: 3rem;
+	display: inline;
+	margin: 0;
+}
+
+
+/* ======================================================== */
+/* header nav, i.e. the top-most bar where normally things like the
+   login/logout link lives.  */
+.header-nav {
+	font-weight: bold;
+	font-style: 1rem;
+	word-spacing: 1rem;
+}
+.header-nav {
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+	display: flex;
+}
+.header-nav a {
+	background-color: var(--foreground-color);
+	color: var(--background-color);
+	text-decoration: none;
+	word-spacing: normal;
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+.header-nav-left {
+	flex-grow: 2;
+}
+.header-nav a:hover {
+	color: var(--foreground-color);
+	background-color: var(--background-color);
+}
+.header-nav-submenu{ display: none; }
+.header-nav-submenu:target { display: inherit; }
+/* ======================================================== */
